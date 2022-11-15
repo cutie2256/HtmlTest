@@ -1,0 +1,64 @@
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #fff143;/*邊框設置 寬度 樣式(實線) 顏色*/
+    padding: 16px 32px;/*設定兩個 DIV 區塊的內距(上下 左右)*/
+    text-align: center;/*置中對齊*/
+    text-decoration: none;/*預設值，無額外文字特效*/
+    display: inline-block;/*元素可在同一行內呈現，寬度預設會撐到最大，使其占滿整行，圖片或文字均不換行，也不會影響其版面配置*/
+    font-size: 16px;/*宣告文字的大小*/
+    margin: 4px 2px;/*用來定義 DIV 的外距(上下 左右)*/
+    transition-duration: 0.4s;/*定義轉場的持續時間*/
+    cursor: pointer;/*改變滑鼠游標的形狀*/
+    width: auto;/*表示寬度是可變動的，這個div的所有部分（content+margin+padding+border）相加為父元素的width大小*/
+    height: auto;/*表示高度可變動的*/
+}
+
+.btnCats:hover {
+    background-color: #fff143;
+    color: white;
+}
+.Catdropdown {
+    position: relative;/*可以結合top 、 bottom、 left 、 right 的屬性來偏移其文檔的常規位置*/
+    display: inline-block;/*元素可在同一行內呈現，寬度預設會撐到最大，使其占滿整行，圖片或文字均不換行，也不會影響其版面配置。*/
+}
+
+.Catdropdown-content {
+    display: none;/*把一個物件完全的隱藏*/
+    position: absolute;/*即絕對定位，便可以將元素放在文檔中任何想放的位置*/
+    background-color: #fffef4;
+    min-width: 160px;/*定義元素的最小寬度*/
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /*設定該元素的位置、模糊、顏色*/
+    padding: 12px 16px;/*設定兩個 DIV 區塊的內距(上下 左右)*/
+    /* 位置 */
+    z-index: 1;/*可以控制物件的堆疊順序*/
+}
+
+.Catdropdown:hover .Catdropdown-content {
+    display: block;/*自動換行*/
+}
+
+.btnDogs:hover {
+    background-color: #fff143;
+    color: white;
+}
+.Dogdropdown {
+    position: relative;/*可以結合top 、 bottom、 left 、 right 的屬性來偏移其文檔的常規位置*/
+    display: inline-block;/*元素可在同一行內呈現，寬度預設會撐到最大，使其占滿整行，圖片或文字均不換行，也不會影響其版面配置。*/
+}
+
+.Dogdropdown-content {
+    display: none;/*把一個物件完全的隱藏*/   
+    position: absolute;/*即絕對定位，便可以將元素放在文檔中任何想放的位置*/
+    background-color: #fffef4;
+    min-width: 160px;/*定義元素的最小寬度*/
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);/*設定該元素的位置、模糊、顏色*/
+    padding: 12px 16px;/*設定兩個 DIV 區塊的內距(上下 左右)*/
+    /* 位置 */
+    z-index: 1;/*可以控制物件的堆疊順序*/
+}
+
+.Dogdropdown:hover .Dogdropdown-content {
+    display: block;/*自動換行*/
+}
+/* 按下button後的事件 */

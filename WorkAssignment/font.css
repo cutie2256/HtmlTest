@@ -1,0 +1,66 @@
+body{
+    background: lightblue url(".//img/0056_01_banner.gif") repeat fixed center;/*重複 固定的 中間*/ 
+}
+p {
+    font-family: "Microsoft JhengHei", Helvetica, Arial, sans-serif;/*字型的設定*/
+    font-size: 16px;/*宣告文字的大小*/
+}
+
+hr {
+    background-color: #fffbcc;
+    border: none;/*無邊框*/
+}
+.wrap{
+    width:100%;/*該物件寬度將會等於是父層內容的可運用空間*/ 
+    margin: 0 auto;/*版面置中*/
+/*     transform: scale3d(1,1,1); */
+}
+
+.header{
+/*     display: flex; */
+    position: fixed;/*會相對於瀏覽器視窗來定位，即便頁面捲動，還是會固定在相同的位置*/
+/*     width: 100% ;    */
+    padding: 0 20px;/*設定兩個 DIV 區塊的內距(上下 左右)*/
+    background-color: rgba(18,18,18,0.3);
+    display: flex;/*啟動開關: 使用 flex 排版的必要設定*/
+    justify-content: space-between;/*平均分配寬度，第一項和最後一項貼齊邊緣*/
+    align-items:center;/*對齊交錯軸線中央*/
+    box-sizing: border-box;/*寬高設定作用在邊框外緣的範圍內*/
+}
+
+.header h1{
+    width:40%;/*該物件寬度將會等於是父層內容的可運用空間*/
+    height: 36px;/*設置 line box 的高度*/
+    text-indent: 0em;/*設定文字首行縮排*/
+    overflow: hidden;/*自動隱藏超出的文字或圖片*/
+    text-align: left;/*靠左對齊*/
+    white-space: nowrap;/*強制不換行,在同一行內顯示所有內容,不使用overflow:auto時,文字將超過畫面外*/
+}
+.menu{
+    display: flex;/*啟動開關: 使用 flex 排版的必要設定*/
+}
+
+.menu li{
+    margin-right: 5px;/*設置元素的右邊距*/
+}
+
+.menu li:nth-child(3){
+    margin-right: 0;/*設置元素的右邊距*/
+}
+
+.menu li a{
+    padding: 20px 20px;/*設定兩個 DIV 區塊的內距*/
+    text-decoration: none;/*預設值，無額外文字特效*/
+    display: block;/*自動換行*/
+    color: #ffffff;
+    border-bottom: 8px solid transparent;/*下邊框設置 寬度 樣式(實線) 顏色(透明)*/
+}
+
+.menu li a:hover{
+    color: #ffd243;
+    border-bottom: 8px solid #ffd243;/*框線設置*/
+}
+.content{
+    padding:60px 40px;/*設定兩個 DIV 區塊的內距*/
+    margin-bottom: 1000px;/*設置元素的下邊距*/
+}
